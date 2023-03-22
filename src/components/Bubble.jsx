@@ -12,7 +12,7 @@ export default function Bubble({ post }) {
                 <div className='flex flex-col items-start w-full'>
                     <div className='flex flex-row flex-wrap items-center'>
                         <p>
-                            <User name={post.user.name} /> {post.text} {post.club && <Club name={post.club}/>}{post.post && <Post name={post.post}/>} {post.new && <span className='relative after:absolute after:top-2 left-2 after:bg-primary-red after:rounded-full after:w-2 after:h-2'></span>}
+                            <User name={post.user.name} /> {post.text} {post.club && <Club name={post.club}/>}{post.post && <Post name={post.post}/>} {post.new && <span className='relative after:absolute after:top-1 left-2 after:bg-primary-red after:rounded-full after:w-2 after:h-2'></span>}
                         </p>
                     </div>
                     <p className='text-neutral-400'>{post.time} ago</p>
