@@ -11,16 +11,16 @@ export default function Bubble({ post }) {
             <div className="flex flex-row">
                 <div className='flex flex-col items-start w-full'>
                     <div className='flex flex-row flex-wrap items-center'>
-                        <p >
+                        <p>
                             <User name={post.user.name} /> {post.text} {post.club && <Club name={post.club}/>}{post.post && <Post name={post.post}/>} {post.new && <span className='relative after:absolute after:top-2 left-2 after:bg-primary-red after:rounded-full after:w-2 after:h-2'></span>}
                         </p>
                     </div>
                     <p className='text-neutral-400'>{post.time} ago</p>
                 </div>
                 <div className="grow"></div>
-                {post.img && <img src={require(`../images/${post.img}`)} className='aspect-square h-12'/>}
+                {post.img && <img src={require(`../images/${post.img}`)} className='aspect-square h-12 ml-2'/>}
             </div>
-            {post.msg && <p className='p-3 border-solid border border-neutral-300 mt-2 text-neutral-500'>{post.msg}</p>}
+            {post.msg && <p className='p-3 rounded-md border-solid border border-neutral-300 mt-2 text-neutral-500 hover:bg-neutral-300'>{post.msg}</p>}
         </div>
     </div>
   )

@@ -15,7 +15,7 @@ module.exports = {
         'neutral-400': 'hsl(219, 14%, 63%)',
         'neutral-500': 'hsl(219, 12%, 42%)',
         'neutral-600': 'hsl(224, 21%, 14%)',
-      },
+      }
   }
   },
   plugins: [],
